@@ -8,7 +8,7 @@ const Home = () => {
     <div>
       <h2>this is home: {tshirts.length}</h2>
       {tshirts.map((tshirt) => (
-        <TShirt></TShirt>
+        <TShirt key={tshirt._id} tshirt={tshirt}></TShirt>
       ))}
     </div>
   );
