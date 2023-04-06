@@ -5,13 +5,14 @@ import Aunty from "../Aunty/Aunty";
 import "./grand.css";
 
 const Grandpa = () => {
+  const ring = "diamond";
   return (
     <div className="grandpa">
       <h2>Grandpa</h2>
       <section className="flex">
-        <Father></Father>
+        <Father ring={ring}></Father>
         <Uncle></Uncle>
-        <Aunty></Aunty>
+        <Aunty ring={ring}></Aunty>
       </section>
     </div>
   );
